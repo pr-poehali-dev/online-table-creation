@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "name": "Get spreadsheet cells",
+      "method": "GET",
+      "path": "/?sheet_id=1",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Update cell value",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "sheet_id": 1,
+        "row": 5,
+        "col": 5,
+        "value": "test"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
