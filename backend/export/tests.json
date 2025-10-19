@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "name": "Export to CSV",
+      "method": "GET",
+      "path": "/?sheet_id=1&format=csv",
+      "expectedStatus": 200
+    }
+  ]
+}
